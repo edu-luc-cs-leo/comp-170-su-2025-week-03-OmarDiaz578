@@ -1,1 +1,10 @@
-#
+# The first mistake I saw was that my code had no comments at all which I know how important they are to further comprehending the material as well as looking back at previous work
+# f strings make coding a lot more efficient, it works by prefixing a string literal with f or F, which then lets you insert expressions directly into curly braces inside the string {}
+# at runtime the expression is evaluated and replaces the placeholder with its given variable saving a lot of time
+# for example, in my code I use an f string within a function when it comes time to print the greeting 
+# it takes the names given and replaces them one by one
+# I could use a function to list the textbooks that I need and print "I need this {textbook}" which would take the list of textbooks and print a message for each one
+# The for loop takes a list (an erray) and runs each variable one by one
+# For exmaple, in my code it takes the list of my friend and runs their names onr by one through the greet function printing the greeting with their name
+# Another example would be if I had a list of textbooks and I would want to run them through a function wher eit would print the textbooks name, it would print them one by one
+# Something well that I did was defining the descriminant with its equation so it could be used easier in the code
