@@ -1,0 +1,43 @@
+
+#Diamond Shape
+def draw_diamond(height):
+
+#Upper + Middle parts of the diamond:
+
+    for i in range(height // 2 + 1):
+    # This for loop creates the rows for the diamond 
+    # Takes the total height of the diamond and divides it by 2 since the diamond has 2 proportional halves 
+    # The + 1 is to include the middle row
+        spaces = " " * (height // 2 - i)
+        # This calculates the number of spaces needed per line
+        # As i increases less spaces will be needed 
+        hash = "#" * (2 * i + 1)
+        # This calculates the number of hash marks needed in each row
+        # The number of hash marks increases as i (row number) increases 
+        print(spaces + hash)
+        # This prints the needed spaces and hash per row
+
+#Lower part of the diamond
+
+    for i in range(height // 2 -1, -1, -1):
+    # This creates a loop for the bottom half of the diamond 
+    # Subtracting one makes it so it creates the rows starting below the middle
+    # The stop value "-1" is needed to include 0, making sure the lowest has is printed
+    # The step value "-1" makes it so that the loop counts backwards
+        spaces = " " * (height // 2 - i)
+        # This calculates the number of spaces needed per line
+        # As i increases less spaces will be needed 
+        hash = "#" * (2 * i + 1)
+        # This calculates the number of hash marks needed in each row
+        # The number of hash marks increases as i (row number) increases 
+        print(spaces + hash)
+        # This prints the needed spaces and hash per row
+
+draw_diamond(13)
+# This calls the "draw_diamond" function with a height of 13
+# Draws a diamond with 13 rows
+
+#Right triangle
+def draw_right_triangle(height):
+        for i in range()
+
