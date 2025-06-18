@@ -91,7 +91,26 @@ print(f"Your total amount of money is ${final_amount:.2f}")
 def draw_hollow_square(size, thickness):
 
     #Top Border
-    for i in range(thickness):
-         
+     for i in range(thickness):
+     # This loop takes thickness and creates an equal amount of rows 
+         print ("#" * size)
+         # This prints hash marks equal to the size
+
+    #Hollow rows
+     for i in range(size - 2 * thickness):
+     # This loop calculates the number of rows that are hollow
+        print("#" * thickness + " " * (size - 2 * thickness) + "#" * thickness)
+        # prints a row for the hollow part
+        # "#" * thickness prints the borders according to the thickness given on both sides
+        # " " * (size - 2 * thickness): prints the spaces to create the hollow part of the square
+
+    #Bottom border
+     for i in range(thickness):
+     # This loop takes thickness and creates an equal amount of rows 
+         print ("#" * size)
+         # This prints hash marks equal to the size
+    
+draw_hollow_square(10, 2)
+# calls the function draw_hollow_square with entered parameters
          
     
