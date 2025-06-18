@@ -62,4 +62,36 @@ draw_right_triangle(7)
 # Drawing a right triangle with 7 rows
 
 #Compound interest
-    #function that takes the input
+    #function that takes the inputs "amount, annual_rate, years" and gives total amount of money accumulated
+def compound_interest(amount, interest_rate, years):
+     
+     for years in range(years):
+     # This is a loop that repeats for the amount of years given
+
+
+          interest = amount * interest_rate
+          # This calculates the interest from the given amount later to be used
+
+          amount += interest
+          # This takes the interest and adds it to the amount given
+     return amount
+     # Sends back the amount after the compound_interest() function runs
+     # The values is then saved in final_amount
+
+final_amount = compound_interest(1000, 0.05, 5)
+# Calls the function compound_interest with the entered variables
+# The returned value is stored in final_amount
+
+print(f"Your total amount of money is ${final_amount:.2f}")
+# Prints a message letting you know the money you have accumalted after the given years
+# Uses an f string to include the final_amount variable along with rounding and displaying the value with 2 decimal places
+
+#Hollow square
+    #Function that takes the inputs "size, thickness" and draws a hollow square
+def draw_hollow_square(size, thickness):
+
+    #Top Border
+    for i in range(thickness):
+         
+         
+    
